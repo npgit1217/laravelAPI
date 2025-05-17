@@ -69,7 +69,7 @@ class PostController extends BaseController
     {
         $data['post'] = Post::select('id','title','description','image')->where([id=>$id])->get();
        
-         return $this->sendResponce($data,'Post data found');
+         return $this->sendResponce($data,'Post data found.');
     
     }
 
@@ -120,7 +120,7 @@ class PostController extends BaseController
         ]);
 
          
-        return $this->sendResponce($post,'Post Updated Successfully');
+        return $this->sendResponce($post,'Post Updated Successfully.');
     }
 
     /**
