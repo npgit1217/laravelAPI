@@ -67,7 +67,7 @@ class PostController extends BaseController
      */
     public function show(string $id)
     {
-        $data['post'] = Post::select('id','title','description','image')->where([id=>$id])->get();
+        $data['post'] = Post::select('id','title','description','image')->where(['id'=>$id])->get();
        
          return $this->sendResponce($data,'Post data found.');
     
